@@ -32,7 +32,6 @@ const Job = () => {
     data: job,
     fn: fnJob,
   } = useFetch(getSingleJob, { job_id: id });
-  console.log(job);
 
   const { loading: loadingHiringStatus, fn: fnHiringStatus } = useFetch(
     updateHiringStatus,

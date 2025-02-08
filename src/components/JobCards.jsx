@@ -52,7 +52,6 @@ const JobCards = ({
 
   useEffect(() => {
     if (savedJob !== undefined) setSaved(savedJob?.length > 0);
-    console.log(savedJob);
   }, [savedJob]);
 
   return (

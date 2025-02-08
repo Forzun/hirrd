@@ -14,7 +14,6 @@ const SavedJobs = () => {
     data: savedJobs,
     fn: fnSavedJobs
   } = useFetch(getSavedJobs)
-  console.log(savedJobs)
 
   useEffect(() => { 
       if(isLoaded) fnSavedJobs();

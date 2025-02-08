@@ -42,7 +42,6 @@ export async function updateApplications(token , {job_id}, status){
     .eq("job_id", job_id)
     .select() 
 
-    console.log(data)
 
     if(error || data.length === 0){ 
         console.error("error update applications status:", error);
@@ -52,7 +51,6 @@ export async function updateApplications(token , {job_id}, status){
 
 export async function addNewJob(token , _, jobData){
     const supabase = await supabaseClient(token); 
-    console.log(jobData)
 
     const {error , data} = await supabase 
     .from("jobs")
@@ -69,7 +67,6 @@ export async function addNewCompany(token , _, companyData){
 
     const random = Math.floor(Math.random() * 90000);
     const fileName = `logo-${random}-${companyData.name}`;
-    console.log(fileName)
 
     const {error:companyError} = await supabase.storage
     .from("company-logo")

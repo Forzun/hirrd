@@ -15,7 +15,6 @@ const Header = () => {
   const [showSignIn, setShowSignIn] = useState(false);
   const [search, setSearch] = useSearchParams();
   const { user } = useUser();
-  console.log(search)
 
   useEffect(() => {
     if (search.get("sign-in")) {

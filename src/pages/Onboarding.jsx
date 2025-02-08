@@ -8,7 +8,6 @@ import { BarLoader } from "react-spinners";
 const Onboarding = () => {  
   const {user , isLoaded} = useUser()
   const navigate = useNavigate()
-  console.log(user)
 
   const handleRoleSelection = async (role) => { 
     await user.update({

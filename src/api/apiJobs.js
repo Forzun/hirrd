@@ -33,7 +33,6 @@ export async function getJobs(token , {location , company_id , searchQuery}){
 
 export async function saveJob(token, {alreadySaved}, saveData) { 
     const supabase = await supabaseClient(token);
-    console.log(saveData)
 
     if (alreadySaved) { 
         const { data, error: deleteError } = await supabase
