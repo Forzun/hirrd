@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -32,7 +31,7 @@ const LandingPage = () => {
           <span className="flex gap-2 sm:gap-4">
             and get{" "}
             <img
-              src="../../public/logo.png"
+              src="logo.png"
               alt="Hirrd Log0"
               className="h-14 sm:h-24 lg:h-32"
             />
@@ -73,7 +72,7 @@ const LandingPage = () => {
         </CarouselContent>
       </Carousel>
 
-      <img className="w-full" src="../../public/banner.jpeg" alt="banner" />
+      <img className="w-full" src="banner.jpeg" alt="banner" />
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Card>
           <CardHeader>
